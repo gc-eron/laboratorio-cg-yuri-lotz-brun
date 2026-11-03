@@ -1,7 +1,7 @@
 import numpy as np
 import streamlit as st
 def ampliar(imagem, k=30):
-return imagem.repeat(k, axis=0).repeat(k, axis=1)
+    return imagem.repeat(k, axis=0).repeat(k, axis=1)
 
 st.title("Bandeira")
 bandeira = np.zeros((12, 18, 3), dtype=np.uint8)
